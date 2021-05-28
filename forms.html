@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is all about forms and input</h2>
+    <!-- action attribute is used to stortes our forms to given location -->
+    <form action="backend.php">
+    <!-- input tag is use to take/accept input from the users -->
+   <div>
+       <label for="name">Name: </label>
+    <input type="text" id="name">
+</div>  <br>
+    <!-- "div" tag is use to break tha line istead of br tag -->
+        <!-- option is an attribute of select tag,and label tag is use to highlight the textbox which is stores in for attribute of label tag,id value of input tag and for value of label tag would be same -->
+      <div> <label for="country">country</label>
+        <select name="country" id="country">
+            <!-- write selected for bu default select the given country after value attribute -->
+            <option value="ind">india</option>
+            <option value="ger">Germany</option>
+            <option value="us">U.S</option>
+        </select>
+        </div><br>
+        <div>
+        Roll: <input type="text"><br>
+    </div>
+   <div>Email: <input type="email" name="my email" ></div><br>
+  Age:   <input type="number" name="my age" ><br>
+ Date: <input type="date" name="my date" id=""><br>
+ <!-- you can write simply "checked" after name for by default checkin -->
+ Are you eligible: <input type="checkbox" name="eligibility"><br>
+Gender:   Male <input type="radio" name="my gender" value="Gender">
+Female <input type="radio" name="my gender">
+ other<input type="radio" name="my gender"><br>
+Write about yourself: <br> <textarea name="my text" cols="30" rows="8"></textarea><br>
+ <!-- after submit,all data move to backend(backend.php) -->
+<input type="submit" value="Submit Now">
+<!-- using value attribute u can control on all forms -->
+<input type="reset" value="Reset Now">
+</form>
+</body>
+</html>

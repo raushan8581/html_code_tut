@@ -1,0 +1,4 @@
+/* here p(paragraph tag) is selector,we can set multiple tag by just seperate these tags with ,(commas) */
+/* color is known as property and color name is known as valve */
+
+p{color: aqua;background-color: azure;}
